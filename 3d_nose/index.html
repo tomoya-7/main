@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>無題ドキュメント</title>
+<script src="p5.min.js"></script>
+</head>
+
+<body>
+<script>
+function preload() {
+    nose = loadModel('nose.obj');
+}
+function setup() {
+  createCanvas(710, 400, WEBGL);
+}
+
+function draw() {
+  background(250);
+  normalMaterial();
+
+  push();
+  scale(6);
+  rotateZ(frameCount * 0.01);
+  rotateX(frameCount * 0.01);
+  rotateY(frameCount * 0.01);
+  model(nose);
+  pop();
+}
+</script>
+</body>
+</html>
