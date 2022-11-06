@@ -1,0 +1,23 @@
+.iconbox {
+  font-size: 2rem;
+}
+.service {
+  background-color: ghostwhite;
+}
+.card-body{
+  background-color:white;
+}
+.btn-big{
+  padding: 20px 40px;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+}
+.carousel-caption {
+  text-shadow: 0 0 5px #000;
+}
+.footer-info img {
+  max-width: 100%;
+}
+footer .card-img-overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
