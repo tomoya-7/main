@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+  <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-255202302-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-255202302-1');
+    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta property="og:url" content="https://ogata.kdcs.work/gosen/stage/index.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="選曲 | 五線譜分解">
+  <meta property="og:description" content="卒業制作で作ったWebサイトです。卒業式や合唱コンクールで歌う曲を一人の時間でも練習ができるツールです。">
+  <meta property="og:site_name" content="五線譜分解">
+  <meta property="og:image" content="https://ogata.kdcs.work/gosen/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/burger.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="../manifest.json">
+  <title>五線譜分解 | Select</title>
+</head>
+
+<body ontouchstart="">
+  <header id="header" class="off">
+    <div class="radius-menu">
+      <h1><a href="../index.html"><img src="../images/title_logo.svg" alt="五線譜分解"></a></h1>
+      <nav class="pc-menu">
+        <ul>
+          <li><a href="../index.html">トップページ</a></li>
+          <li><a href="#">分解</a></li>
+          <li><a href="../character.html">登場人物</a></li>
+          <li><a href="../contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="hamburger-menu">
+      <nav class="headerNav">
+        <ul class="navList">
+          <li class="navItem"><a href="../index.html">トップページ</a></li>
+          <li class="navItem"><a href="#">分解</a></li>
+          <li class="navItem"><a href="../character.html">登場人物</a></li>
+          <li class="navItem"><a href="../contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger_btn" id="js-hamburger">
+        <span class="hamburger_line hamburger_line_1"></span>
+        <span class="hamburger_line hamburger_line_2"></span>
+        <span class="hamburger_line hamburger_line_3"></span>
+      </div>
+      <div class="black-bg" id="js-black-bg"></div>
+    </div>
+  </header>
+
+  <main>
+    <div id="att" class="attention">
+      <div class="attention-inner">
+        <div class="attention-text">
+          <h2>Attention!</h2>
+          <p>通信状況によっては<br>音がズレてしまう可能性があります</p>
+        </div>
+        <div class="attention-des">
+          <div class="attention-des-item">
+            <figure><img src="../images/attention_1.jpg" alt=""></figure>
+            <p>オレンジ色の「再生ボタン」を押します。</p>
+          </div>
+          <div class="attention-des-item">
+            <figure><img src="../images/attention_2.jpg" alt=""></figure>
+            <p>グレーのボタンを押すとそれぞれのパートが無音になります。もう一度押すと、再び聴こえるようになります。</p>
+          </div>
+          <div class="attention-des-item">
+            <figure><img src="../images/attention_3.jpg" alt=""></figure>
+            <p>もう一度再生するには「もう一回」ボタンを押すか、この「分解」ページにお戻りください。<br>(※曲が終了した際に停止せずにお待ちいただくと、自動で戻ってきます)</p>
+          </div>
+        </div>
+        <div class="attention-text">
+          <p>音が出るコンテンツです<br>端末の音量を上げてご利用ください</p>
+          <select name="playlist" id="playlist" class="playlist">
+            <option>曲を選んでください</option>
+            <option value="./hurusato.html">ふるさと</option>
+            <option value="./momiji.html">紅葉</option>
+            <option value="./aogeba-totoshi.html">仰げば尊し</option>
+            <option value="./hotaru-no-hikari.html">蛍の光</option>
+            <option value="./harugakita.html">春が来た</option>
+            <option value="./koujo-no-tsuki.html">荒城の月</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="copyright">
+      <h5>&copy; OgataTomoya</h5>
+    </div>
+  </footer>
+<script type="text/javascript" src="../js/burger.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>
