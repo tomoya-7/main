@@ -1,0 +1,132 @@
+/* Start ナビゲーション */
+.headerNav {
+  position: fixed;
+  right: -250px;/*右側に隠しておきます*/
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  padding-top: 160px;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all .6s;
+  z-index: 300;
+  overflow-y: auto;
+}
+.navList {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: block;
+}
+.navItem {
+  padding: 1rem 1rem 0;
+}
+.navItem a {
+  display: block;
+  border-bottom: 0.5px solid #eee;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 4rem 0 0.8rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.navItem a:hover {
+  color:rgba(14, 244, 255);
+  font-weight: bold;
+  transition: all .3s;
+}
+/* End ナビゲーション */
+
+/* Start ハンバーガーボタン(三本線の実装) */
+.hamburger_btn {
+  border-radius: 50%;
+  background-color: rgba(120, 120, 120, 0.7);
+  position: absolute;
+  right: 10px;
+  top: 80vh;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  z-index: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger_line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 1px;
+  background-color: #fff;
+  transition: all .6s;
+}
+.hamburger_line_1 {
+  top: 20px;
+}
+.hamburger_line_2 {
+  top: 26px;
+}
+.hamburger_line_3 {
+  top: 32px;
+}
+
+
+
+/*ハンバーガーメニューをクリックした後に現れる半透明の背景*/
+.black-bg {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 200;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .6s;
+  cursor: pointer;
+}
+
+
+/* Start ハンバーガーボタンをクリックした際の動き */
+/* ナビゲーションが現れる */
+.nav-open .headerNav {
+  right: 0;
+}
+/* 半透明の背景を表示 */
+.nav-open .black-bg {
+  opacity: 0.8;
+  visibility: visible;
+}
+
+/* 三本線のハンバーガーをバツに */
+.nav-open .hamburger_line {
+  left: 30%;
+}
+.nav-open .hamburger_line_1 {
+  transform: rotate(45deg);
+  top: 26px;
+}
+.nav-open .hamburger_line_2 {
+  width: 0;
+  left: 0%;
+}
+.nav-open .hamburger_line_3 {
+  transform: rotate(-45deg);
+  top: 26px;
+}
+/* End ハンバーガーボタンをクリックした際の動き */
+
+/* スクロール禁止 */
+.ban-scroll {
+  overflow: hidden;
+}
+
+@media screen and (min-width:901px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
